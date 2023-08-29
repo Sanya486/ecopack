@@ -1,0 +1,43 @@
+.proposal {
+  padding-top: 60;
+  padding-bottom: 60px;
+  .title {
+    color: $darkColor;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 187.5%;
+    margin-bottom: 12px;
+  }
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+    .text {
+      color: $darkColor;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 133.333%;
+    }
+  }
+}
+
+.proposal .image-subtext {
+  background-color: $accentColor;
+  display: flex;
+  height: 90px;
+  padding: 0px 72px 0px 71px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  color: $lightColor;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}

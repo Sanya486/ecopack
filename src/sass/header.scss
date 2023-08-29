@@ -1,0 +1,21 @@
+.header {
+  height: 80px;
+  display: flex;
+}
+
+.header-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-self: center;
+  span {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}

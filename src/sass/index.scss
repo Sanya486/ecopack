@@ -1,17 +1,19 @@
 // utils
-@import'./utils/variables.scss';
-@import'./utils/buttons.scss';
-
+@import './utils/variables.scss';
+@import './utils/buttons.scss';
 
 // Base
 @import './base/common.scss';
-@import'./base/reset.scss';
+@import './base/reset.scss';
 
 // Components
 @import './components/container.scss';
 
-// Layouts
+// Common sections
+@import './header.scss';
+@import './footer.scss';
 
-
-
-
+// Main page
+@import './layout/main/hero.scss';
+@import './layout/main/why-eco.scss';
+@import './layout/main/proposal.scss';

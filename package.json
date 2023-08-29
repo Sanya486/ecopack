@@ -2,7 +2,7 @@
   "name": "ecopack",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Sanyok486.github.io/ecopack",
+  "homepage": "https://Sanya486.github.io/ecopack",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /ecopack/"

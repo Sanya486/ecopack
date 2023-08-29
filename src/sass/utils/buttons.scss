@@ -5,6 +5,7 @@
 }
 
 @mixin btn-full($fontWeight) {
+  color: $lightColor;
   font-weight: $fontWeight;
   font-size: 18px;
   line-height: 20px;
@@ -16,7 +17,7 @@
   font-weight: $fontWeight;
   font-size: 18px;
   line-height: 20px;
-  border-color: $accentColor;
+  border: 4px solid $accentColor;
 }
 
 @mixin btn-full-outlined($fontWeight) {
