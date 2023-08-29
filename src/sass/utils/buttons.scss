@@ -1,0 +1,29 @@
+@mixin btn {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-radius: 8px;
+}
+
+@mixin btn-full($fontWeight) {
+  font-weight: $fontWeight;
+  font-size: 18px;
+  line-height: 20px;
+  background-color: $accentColor;
+}
+
+@mixin btn-outlined($fontWeight) {
+  color: $darkColor;
+  font-weight: $fontWeight;
+  font-size: 18px;
+  line-height: 20px;
+  border-color: $accentColor;
+}
+
+@mixin btn-full-outlined($fontWeight) {
+  color: $lightColor;
+  font-weight: $fontWeight;
+  font-size: 18px;
+  line-height: 20px;
+  border-color: $accentSecondaryColor;
+  background-color: $accentColor;
+}
