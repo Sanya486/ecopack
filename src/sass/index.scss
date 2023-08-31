@@ -1,6 +1,6 @@
 // utils
 @import './utils/variables.scss';
-@import './utils/buttons.scss';
+@import './utils/mixins.scss';
 
 // Base
 @import './base/common.scss';
@@ -19,5 +19,7 @@
 @import './layout/main/proposal.scss';
 
 // About page
-
 @import './layout/about/main.scss';
+
+// Contacts page
+@import './layout/contacts/main.scss';

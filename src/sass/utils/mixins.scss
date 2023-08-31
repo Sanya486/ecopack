@@ -28,3 +28,11 @@
   border-color: $accentSecondaryColor;
   background-color: $accentColor;
 }
+
+@mixin title {
+  color: $darkColor;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 214.286%;
+}

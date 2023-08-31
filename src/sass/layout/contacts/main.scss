@@ -1,0 +1,72 @@
+@mixin contacts-subtitle {
+  margin-bottom: 8px;
+  color: $darkColor;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 166.667%;
+}
+
+@mixin contacts-text {
+  color: $darkColor;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 166.667%;
+}
+
+.contacts {
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  iframe {
+    margin-bottom: 24px;
+  }
+
+  .title {
+    @include title;
+  }
+
+  .subtitle {
+    @include contacts-subtitle;
+  }
+
+  .text {
+    @include contacts-text;
+  }
+
+  .phone-wrapper {
+    margin-bottom: 18px;
+  }
+
+  .email-wrapper {
+    margin-bottom: 18px;
+  }
+
+  .address {
+    margin-bottom: 22px;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .button-wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .to-catalog-btn {
+    @include btn;
+    @include btn-full(700);
+    padding: 17px 12px;
+  }
+  .to-home-btn {
+    @include btn;
+    @include btn-outlined(700);
+    padding: 13px 26px;
+  }
+}
