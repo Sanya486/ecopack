@@ -1,0 +1,38 @@
+.catalog {
+  padding-bottom: 60px;
+  .title {
+    @include title;
+  }
+  .products-list {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    li {
+      width: 358px;
+      height: 360px;
+
+      h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        height: 90px;
+        padding: 33px 50px;
+
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        background-color: $accentColor;
+        color: $lightColor;
+
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+      }
+    }
+  }
+}
