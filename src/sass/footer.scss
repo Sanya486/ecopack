@@ -30,7 +30,7 @@
   line-height: normal;
 }
 
-.footer .contacts {
+.footer .contacts-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -66,5 +66,23 @@
     font-style: normal;
     font-weight: 400;
     line-height: 166.667%;
+  }
+}
+
+// ============== Tablet ==============
+
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .address-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer .contacts-list {
+    margin: 0;
   }
 }
