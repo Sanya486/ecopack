@@ -75,12 +75,14 @@
       right: 0;
     }
   }
-  button {
-    @include btn;
-    @include btn-full(700);
-    padding: 17px 48px;
+  .btn-link {
     display: block;
-    margin-left: auto;
+    width: 280px;
     margin-right: auto;
+    margin-left: auto;
+    @include btn;
+    @include btn-full(600);
+    padding-left: 47px;
+    padding-right: 47px;
   }
 }

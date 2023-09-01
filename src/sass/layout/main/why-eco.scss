@@ -56,11 +56,12 @@
   line-height: 133.333%;
 }
 
-.why-eco button {
+.why-eco .btn-link {
   @include btn;
   @include btn-outlined(600);
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  width: 270px;
   align-items: center;
   padding-left: 24px;
   padding-right: 8px;

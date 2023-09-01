@@ -8,7 +8,8 @@
   position: absolute;
   bottom: 64px;
   max-width: 358px;
-  button {
+  .btn-link {
+    display: inline-block;
     @include btn;
     @include btn-full(600);
     padding-left: 47px;
