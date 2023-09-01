@@ -1,0 +1,66 @@
+.disposal-cap {
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  .product-wrapper {
+    @include product-wrapper;
+  }
+
+  .title {
+    @include title;
+    margin-bottom: 48px;
+  }
+
+  img {
+    margin-bottom: 24px;
+  }
+
+  .subtitle {
+    @include subtitle;
+  }
+
+  .text {
+    color: $darkColor;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 166.667%;
+  }
+
+  .capacity-list {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+
+    p {
+      display: flex;
+      align-items: center;
+      &:before {
+        display: inline-block;
+        content: '';
+        width: 24px;
+        height: 24px;
+        background-color: $accentColor;
+        margin-right: 8px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .underlist-text-wrapper {
+    p + p {
+      margin-top: 36px;
+    }
+  }
+
+  button {
+    @include btn;
+    @include btn-full(700);
+    padding: 17px 36px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
