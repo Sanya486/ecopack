@@ -1,12 +1,25 @@
 .main-hero {
-  padding-bottom: 290px;
-
-  position: relative;
+  padding-top: 290px;
+  padding-bottom: 64px;
+ 
+  &.bcg{
+ background-image: url(../img/hero-bcg/mobile/image-hero.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  }
+  
+  .main-hero-container {
+  }
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+  .main-hero{
+&.bcg{
+      background-image: url(../img/hero-bcg/mobile/image-hero@2x.png);
+}
+  }
+  }
 
 .hero-content-wrapper {
-  position: absolute;
-  bottom: 64px;
   max-width: 358px;
   .btn-link {
     display: inline-block;

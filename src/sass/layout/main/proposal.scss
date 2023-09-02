@@ -37,6 +37,14 @@
     padding-top: 17px;
     padding-bottom: 17px;
   }
+
+  .paper-bag-card {
+    display: none;
+  }
+
+  .t-shirt-bag-card {
+    display: none;
+  }
 }
 
 .proposal .image-subtext {
@@ -55,4 +63,22 @@
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+}
+
+@media screen and (min-width: 768px) {
+
+  .proposal{
+
+    .card-container{
+      display: flex;
+      gap: 20px;
+    }
+    .t-shirt-bag-card {
+      display: block;
+    }
+
+  }
+}
+
+@media screen and (min-width: 768px) {
 }
