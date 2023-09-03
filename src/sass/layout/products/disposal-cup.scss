@@ -70,12 +70,14 @@
 
 // ============== Tablet styles ==============
 
-.disposal-cap {
-  .img-wrapper {
-    display: flex;
-    justify-content: center;
-    max-width: 704px;
-    height: 490px;
-    margin-bottom: 24px;
+@media screen and (min-width: 768px) {
+  .disposal-cap {
+    .img-wrapper {
+      display: flex;
+      justify-content: center;
+      max-width: 704px;
+      height: 490px;
+      margin-bottom: 24px;
+    }
   }
 }

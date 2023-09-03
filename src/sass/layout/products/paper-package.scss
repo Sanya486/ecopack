@@ -2,6 +2,11 @@
   padding-top: 40px;
   padding-bottom: 60px;
 
+  .img-wrapper {
+    max-width: 358px;
+    margin-bottom: 24px;
+  }
+
   img {
     margin-bottom: 24px;
   }
@@ -42,5 +47,19 @@
     @include btn-full(600);
     padding-left: 47px;
     padding-right: 47px;
+  }
+}
+
+// ============== Tablet styles ==============
+
+@media screen and (min-width: 768px) {
+  .paper-package {
+    .img-wrapper {
+      display: flex;
+      justify-content: center;
+      max-width: 704px;
+      height: 490px;
+      margin-bottom: 24px;
+    }
   }
 }
