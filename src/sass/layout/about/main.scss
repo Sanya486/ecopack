@@ -86,3 +86,52 @@
     padding-right: 47px;
   }
 }
+
+// ============== Tablet styles ==============
+@media screen and (min-width: 768px) {
+  .about-main {
+    .first-wrap {
+      margin-bottom: 47px;
+
+      display: grid;
+      grid-template-columns: 362px 342px;
+      grid-template-rows: 60px 224px 112px;
+      grid-row-gap: 24px;
+
+      .first-part-text {
+        margin-bottom: 0;
+        grid-column: 1;
+        grid-row: 2;
+      }
+
+      .second-part-text {
+        margin-bottom: 0;
+        grid-row: 3/3;
+        grid-column: 1/3;
+      }
+
+      .uniq-wrapper {
+        grid-column: 2;
+        grid-row: 1/3;
+      }
+    }
+
+    .second-wrap {
+      margin-bottom: 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 308px 112px;
+      grid-column-gap: 20px;
+      grid-row-gap: 24px;
+
+      .third-part-text {
+        margin-bottom: 0;
+        grid-area: 1/2/2/2;
+      }
+      .fourth-part-text {
+        margin-bottom: 0;
+        grid-area: 2/1/2/3;
+      }
+    }
+  }
+}

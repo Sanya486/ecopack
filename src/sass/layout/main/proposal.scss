@@ -1,6 +1,7 @@
 .proposal {
   padding-top: 60;
   padding-bottom: 60px;
+
   .title {
     color: $darkColor;
     font-size: 32px;
@@ -9,6 +10,7 @@
     line-height: 187.5%;
     margin-bottom: 12px;
   }
+
   .text-wrapper {
     display: flex;
     flex-direction: column;
@@ -22,6 +24,7 @@
       line-height: 133.333%;
     }
   }
+
   .btn-link {
     @include btn;
     @include btn-outlined(600);
@@ -32,8 +35,8 @@
     justify-content: space-between;
     width: 270px;
     align-items: center;
-    padding-left: 24px;
-    padding-right: 8px;
+    padding-left: 36px;
+    padding-right: 36px;
     padding-top: 17px;
     padding-bottom: 17px;
   }
@@ -45,31 +48,39 @@
   .t-shirt-bag-card {
     display: none;
   }
+  .image-subtext {
+    background-color: $accentColor;
+    display: flex;
+    height: 90px;
+    padding: 0px 72px 0px 71px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    color: $lightColor;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+  }
+
+  .card-container {
+    .img-wrap {
+      width: 358px;
+      height: 270px;
+    }
+  }
 }
 
-.proposal .image-subtext {
-  background-color: $accentColor;
-  display: flex;
-  height: 90px;
-  padding: 0px 72px 0px 71px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-
-  color: $lightColor;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 120%;
-}
+// =================== Tablet styles ===================
 
 @media screen and (min-width: 768px) {
-
-  .proposal{
-
-    .card-container{
+  .proposal {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .card-container {
       display: flex;
       gap: 20px;
     }
@@ -77,8 +88,16 @@
       display: block;
     }
 
-  }
-}
+    .card-container {
+      .img-wrap {
+        width: 342px;
+        height: 280px;
+      }
+    }
 
-@media screen and (min-width: 768px) {
+    .image-subtext {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }

@@ -1,8 +1,11 @@
 .catalog {
+  padding-top: 40px;
   padding-bottom: 60px;
+
   .title {
     @include title;
   }
+
   .products-list {
     margin-top: 48px;
     display: flex;
@@ -32,6 +35,34 @@
         font-style: normal;
         font-weight: 600;
         line-height: 120%;
+      }
+    }
+  }
+
+  .img-wrap {
+    width: 358;
+    height: 270px;
+  }
+}
+
+// ============== Tablet styles ==============
+
+@media screen and (min-width: 768px) {
+  .catalog {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .img-wrap {
+      width: 342px;
+      height: 280px;
+    }
+
+    .products-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 20px;
+      row-gap: 38px;
+      li {
+        width: calc(((100% - 20px) / 2));
       }
     }
   }

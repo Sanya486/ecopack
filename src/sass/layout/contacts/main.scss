@@ -20,6 +20,8 @@
   padding-bottom: 60px;
 
   iframe {
+    width: 358px;
+    height: 358px;
     margin-bottom: 24px;
   }
 
@@ -68,5 +70,37 @@
     @include btn;
     @include btn-outlined(700);
     padding: 13px 26px;
+  }
+}
+
+// ============== Tablet styles ==============
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    iframe {
+      margin-top: 24px;
+      width: 100%;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .button-wrapper {
+      justify-content: center;
+      gap: 24px;
+
+      .to-catalog-btn {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+      .to-home-btn {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+    }
+    .address {
+      margin-bottom: 0;
+    }
   }
 }
