@@ -23,10 +23,12 @@
     width: 358px;
     height: 358px;
     margin-bottom: 24px;
+    border-radius: 20px;
   }
 
   .title {
     @include title;
+    margin-bottom: 47px;
   }
 
   .subtitle {
@@ -46,6 +48,7 @@
   }
 
   .address {
+    width: 292px;
     margin-bottom: 22px;
   }
 
@@ -101,6 +104,33 @@
     }
     .address {
       margin-bottom: 0;
+    }
+  }
+}
+
+// ============== Desktop styles ==============
+
+@media screen and (min-width: 1440px) {
+  .contacts {
+    .desktop-style-container {
+      display: flex;
+      gap: 24px;
+      iframe {
+        margin: 0;
+        width: 887px;
+        height: 602px;
+      }
+    }
+    .address {
+      width: auto;
+    }
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .button-wrapper {
+      margin-top: 80px;
     }
   }
 }

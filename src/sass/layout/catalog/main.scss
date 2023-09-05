@@ -67,3 +67,30 @@
     }
   }
 }
+
+// ============== Desktop styles ==============
+
+@media screen and (min-width: 1440px) {
+  .catalog {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    .img-wrap {
+      width: 432px;
+      height: 288px;
+      img {
+        width: 100%;
+      }
+    }
+
+    .products-list {
+      margin-top: 80px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 20px;
+      row-gap: 38px;
+      li {
+        width: calc(((100% - 48px) / 3));
+      }
+    }
+  }
+}
