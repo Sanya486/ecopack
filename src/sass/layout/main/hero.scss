@@ -1,8 +1,6 @@
 .main-hero {
-  padding-top: 290px;
-  padding-bottom: 64px;
-
-  &.bcg {
+  .bcg {
+    background-color: #fafafa;
     background-image: url(../img/hero-bcg/mobile/image-hero.png);
     background-repeat: no-repeat;
     background-position: center top;
@@ -16,6 +14,8 @@
   }
 
   .hero-content-wrapper {
+    padding-top: 290px;
+    padding-bottom: 64px;
     max-width: 358px;
     .btn-link {
       display: inline-block;
@@ -48,7 +48,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .main-hero {
-    &.bcg {
+    .bcg {
       background-image: url(../img/hero-bcg/mobile/image-hero@2x.png);
     }
   }
@@ -58,9 +58,7 @@
 
 @media screen and (min-width: 768px) {
   .main-hero {
-    padding-top: 424px;
-    padding-bottom: 144px;
-    &.bcg {
+    .bcg {
       background-image: url(../img/hero-bcg/tablet/image-hero.png);
       background-repeat: no-repeat;
       background-position: center top;
@@ -68,6 +66,8 @@
     }
 
     .hero-content-wrapper {
+      padding-top: 424px;
+      padding-bottom: 144px;
       max-width: 537px;
 
       .main-text {
@@ -85,8 +85,43 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .main-hero {
-      &.bcg {
+      .bcg {
         background-image: url(../img/hero-bcg/tablet/image-hero@2x.png);
+      }
+    }
+  }
+}
+
+// ================  Desktop styles ================
+
+@media screen and (min-width: 1440px) {
+  .main-hero {
+    .bcg {
+      background-image: url(../img/hero-bcg/desktop/image-hero.png);
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: 923px 662px;
+    }
+
+    .hero-content-wrapper {
+      padding-top: 164px;
+      padding-bottom: 172px;
+      max-width: 910px;
+      .main-text {
+        font-size: 48px;
+        margin-bottom: 36px;
+      }
+      .secondary-text {
+        margin-bottom: 36px;
+      }
+    }
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-hero {
+      .bcg {
+        background-image: url(../img/hero-bcg/desktop/image-hero@2x.png);
       }
     }
   }

@@ -101,3 +101,43 @@
     }
   }
 }
+
+// =================== Desktop styles ===================
+
+@media screen and (min-width: 1440px) {
+  .proposal {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .t-shirt-bag-card {
+      display: block;
+    }
+
+    .paper-bag-card {
+      display: block;
+    }
+
+    .card-container {
+      .img-wrap {
+        width: 432px;
+        height: 288px;
+      }
+    }
+
+    .text-wrapper {
+      width: 658px;
+    }
+
+    .image-subtext {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .btn-link {
+      margin-top: 72px;
+    }
+  }
+}
