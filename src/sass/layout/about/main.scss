@@ -67,7 +67,7 @@
       z-index: 100;
     }
 
-    img {
+    .img-wrapper {
       position: absolute;
       width: 330px;
       height: 278px;
@@ -84,6 +84,9 @@
     @include btn-full(600);
     padding-left: 47px;
     padding-right: 47px;
+  }
+  .btn-link-desktop {
+    display: none;
   }
 }
 
@@ -132,6 +135,95 @@
         margin-bottom: 0;
         grid-area: 2/1/2/3;
       }
+    }
+  }
+}
+
+// ============== Desktop styles ==============
+@media screen and (min-width: 1440px) {
+  .about-main {
+    .first-wrap {
+      margin-bottom: 47px;
+
+      display: grid;
+      height: 354px;
+      grid-template-columns: 756px 546px;
+      grid-template-rows: 88px 100px 84px;
+      grid-row-gap: 0;
+      grid-column-gap: 46px;
+
+      .first-part-text {
+        margin-bottom: 0;
+        grid-column: 1;
+        grid-row: 2;
+      }
+
+      .second-part-text {
+        margin-bottom: 0;
+        grid-row: 3;
+        grid-column: 1;
+      }
+
+      .uniq-wrapper {
+        width: 546px;
+        height: 354px;
+        grid-column: 2;
+        grid-row: 1/4;
+
+        .img-wrapper {
+          height: 100%;
+        }
+      }
+    }
+
+    .second-wrap {
+      margin-bottom: 48px;
+      height: 354px;
+      display: grid;
+      grid-template-columns: 0.4377fr 0.5622fr;
+      grid-template-rows: 0.33fr 0.33fr 0.33fr;
+      grid-column-gap: 0;
+      grid-row-gap: 24px;
+
+      .eco-wrapper {
+        width: 546px;
+        height: 354px;
+
+        grid-column: 1;
+        grid-row: 1/4;
+        .img-wrapper {
+          width: 419px;
+          height: 345px;
+          right: 0;
+          top: 0;
+        }
+      }
+
+      .third-part-text {
+        margin-bottom: 0;
+        grid-area: 1/2/2/2;
+      }
+      .fourth-part-text {
+        margin-bottom: 0;
+        grid-area: 2/2/2/3;
+      }
+
+      .btn-link-desktop {
+        display: block;
+        grid-column: 2;
+        grid-row: 3;
+        align-self: center;
+
+        display: block;
+        width: 280px;
+        @include btn;
+        @include btn-full(600);
+        padding-left: 47px;
+        padding-right: 47px;
+      }
+    }
+    .btn-link {
+      display: none;
     }
   }
 }
