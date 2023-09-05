@@ -83,3 +83,23 @@
     }
   }
 }
+
+// ============== Desktop styles ==============
+
+@media screen and (min-width: 1440px) {
+  .disposal-cap {
+    .title {
+      margin-bottom: 48px;
+    }
+    .product-wrapper {
+      width: 774px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .img-wrapper {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

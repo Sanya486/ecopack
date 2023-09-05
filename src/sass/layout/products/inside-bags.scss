@@ -57,7 +57,7 @@
 
   .btn-link {
     display: block;
-    width: 280px;
+    width: 300px;
     margin-right: auto;
     margin-left: auto;
     @include btn;
@@ -77,6 +77,26 @@
       max-width: 704px;
       height: 490px;
       margin-bottom: 0;
+    }
+  }
+}
+
+// ============== Desktop styles ==============
+
+@media screen and (min-width: 1440px) {
+  .inside-bags {
+    .title {
+      margin-bottom: 48px;
+    }
+    .product-wrapper {
+      width: 774px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .img-wrapper {
+      img {
+        width: 100%;
+      }
     }
   }
 }
