@@ -3,6 +3,13 @@
   padding-bottom: 40px;
   background-color: $accentColor;
 
+  a {
+    transition: color 100ms linear;
+    &:hover {
+      color: $darkColor;
+    }
+  }
+
   .footer-logo {
     div {
       display: flex;
@@ -51,6 +58,10 @@
       font-style: normal;
       font-weight: 500;
       line-height: normal;
+      transition: color 300ms linear;
+      &:hover {
+        color: $darkColor;
+      }
     }
   }
 
@@ -102,9 +113,13 @@
     }
     .footer-logo-desktop {
       display: block;
+      align-self: flex-start;
       div {
         display: flex;
-        margin-bottom: 30px;
+        transition: transform 300ms linear;
+        &:hover {
+          transform: scale(1.05);
+        }
         .logo-text {
           color: $darkColor;
           font-size: 28px;

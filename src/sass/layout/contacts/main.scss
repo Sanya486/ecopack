@@ -72,6 +72,8 @@
   .to-home-btn {
     @include btn;
     @include btn-outlined(700);
+    display: flex;
+    align-items: center;
     padding: 13px 26px;
   }
 }

@@ -77,7 +77,7 @@
   }
   .btn-link {
     display: block;
-    width: 280px;
+    width: 300px;
     margin-right: auto;
     margin-left: auto;
     @include btn;
@@ -215,7 +215,7 @@
         align-self: center;
 
         display: block;
-        width: 280px;
+        width: 300px;
         @include btn;
         @include btn-full(600);
         padding-left: 47px;

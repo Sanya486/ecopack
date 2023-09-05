@@ -65,7 +65,7 @@
 
   .btn-link {
     display: block;
-    width: 300px;
+    width: 306px;
     margin-right: auto;
     margin-left: auto;
     @include btn;
@@ -107,6 +107,9 @@
       img {
         width: 100%;
       }
+    }
+    .tel:hover {
+      color: $accentColor;
     }
   }
 }

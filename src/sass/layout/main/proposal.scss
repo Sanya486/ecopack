@@ -48,28 +48,42 @@
   .t-shirt-bag-card {
     display: none;
   }
-  .image-subtext {
-    background-color: $accentColor;
-    display: flex;
-    height: 90px;
-    padding: 0px 72px 0px 71px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-
-    color: $lightColor;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-  }
 
   .card-container {
     .img-wrap {
       width: 358px;
       height: 270px;
+    }
+    .image-subtext {
+      background-color: $accentColor;
+      display: flex;
+      height: 90px;
+      padding: 0px 72px 0px 71px;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+      color: $lightColor;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%;
+
+      transition: color 300ms linear, background-color 300ms linear,
+        border-color 300ms linear;
+
+      &:hover {
+        color: $lightColor;
+        background-color: $accentColor;
+        border: 4px solid $accentSecondaryColor;
+      }
+      &:active {
+        color: $darkColor;
+        background-color: $lightColor;
+        border: 4px solid $accentSecondaryColor;
+      }
     }
   }
 }

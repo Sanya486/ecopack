@@ -10,6 +10,18 @@
   font-size: 18px;
   line-height: 20px;
   background-color: $accentColor;
+  border: 4px solid $accentColor;
+  transition: color 300ms linear, background-color 300ms linear,
+    border-color 300ms linear;
+  &:hover {
+    color: $darkColor;
+    background-color: $lightColor;
+  }
+  &:active {
+    color: $lightColor;
+    background-color: $accentColor;
+    border: 4px solid $accentSecondaryColor;
+  }
 }
 
 @mixin btn-outlined($fontWeight) {
@@ -18,6 +30,17 @@
   font-size: 18px;
   line-height: 20px;
   border: 4px solid $accentColor;
+  transition: color 300ms linear, background-color 300ms linear,
+    border-color 300ms linear;
+  &:hover {
+    color: $lightColor;
+    background-color: $accentColor;
+  }
+  &:active {
+    color: $lightColor;
+    background-color: $accentColor;
+    border: 4px solid $accentSecondaryColor;
+  }
 }
 
 @mixin btn-full-outlined($fontWeight) {

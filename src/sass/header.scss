@@ -10,6 +10,10 @@
   .logo {
     display: flex;
     align-self: center;
+    transition: transform 300ms linear;
+    &:hover {
+      transform: scale(1.05);
+    }
     span {
       font-size: 28px;
       font-style: normal;
@@ -54,6 +58,7 @@
           font-style: normal;
           font-weight: 400;
           line-height: normal;
+          transition: color 300ms linear;
           &:hover {
             color: $accentColor;
           }
@@ -75,6 +80,7 @@
           font-style: normal;
           font-weight: 400;
           line-height: normal;
+          transition: color 300ms linear;
           &:hover {
             color: $accentColor;
           }
@@ -99,6 +105,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 20px;
+        transition: color 300ms linear;
         &:hover {
           color: $accentColor;
         }
