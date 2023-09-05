@@ -2,10 +2,6 @@
   padding-top: 40px;
   padding-bottom: 60px;
 
-  img {
-    margin-bottom: 24px;
-  }
-
   .img-wrapper {
     max-width: 358px;
     margin-bottom: 24px;
@@ -25,6 +21,9 @@
 
   .product-wrapper {
     @include product-wrapper;
+    .product-text-wrapper {
+      @include product-text-wrapper;
+    }
   }
 
   .subtitle {

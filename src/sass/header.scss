@@ -1,21 +1,79 @@
 .header {
   height: 80px;
   display: flex;
+
+  .header-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    align-self: center;
+    span {
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      color: $darkColor;
+    }
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .contacts-list {
+    display: none;
+  }
 }
 
-.header-container {
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-between;
-}
+// ================ Desktop styles ================
 
-.logo {
-  display: flex;
-  align-self: center;
-  span {
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+@media screen and (min-width: 1440px) {
+  .header {
+    .burger-icon {
+      display: none;
+    }
+
+    .navigation {
+      display: block;
+      ul {
+        display: flex;
+        gap: 48px;
+        align-items: center;
+        a {
+          color: $darkColor;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          &:hover {
+            color: $accentColor;
+          }
+        }
+      }
+    }
+    .contacts-list {
+      display: flex;
+      gap: 20;
+      align-items: center;
+      li {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        a {
+          color: $darkColor;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          &:hover {
+            color: $accentColor;
+          }
+        }
+      }
+    }
   }
 }

@@ -25,6 +25,9 @@
 
   .product-wrapper {
     @include product-wrapper;
+    .product-text-wrapper {
+      @include product-text-wrapper;
+    }
   }
 
   .subtitle {
@@ -76,7 +79,7 @@
       justify-content: center;
       max-width: 704px;
       height: 490px;
-      margin-bottom: 24px;
+      margin-bottom: 0;
     }
   }
 }
