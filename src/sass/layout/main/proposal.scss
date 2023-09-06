@@ -51,14 +51,13 @@
 
   .card-container {
     .img-wrap {
-      width: 358px;
+      max-width: 358px;
       height: 270px;
     }
     .image-subtext {
       background-color: $accentColor;
       display: flex;
       height: 90px;
-      padding: 0px 72px 0px 71px;
       justify-content: center;
       align-items: center;
       flex-shrink: 0;

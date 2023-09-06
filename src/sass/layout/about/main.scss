@@ -50,7 +50,7 @@
   }
 
   .eco-wrapper {
-    width: 358px;
+    max-width: 358px;
     height: 308px;
     margin-bottom: 20px;
     position: relative;
@@ -69,15 +69,21 @@
 
     .img-wrapper {
       position: absolute;
-      width: 330px;
+      max-width: 330px;
       height: 278px;
       top: 0;
       right: 0;
     }
   }
+
+  .uniq-wrapper {
+    .img-wrapper {
+      height: 100%;
+    }
+  }
   .btn-link {
     display: block;
-    width: 300px;
+    max-width: 300px;
     margin-right: auto;
     margin-left: auto;
     @include btn;

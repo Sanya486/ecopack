@@ -57,13 +57,13 @@
 
   .btn-link {
     display: block;
-    width: 306px;
+    max-width: 306px;
     margin-right: auto;
     margin-left: auto;
     @include btn;
     @include btn-full(600);
-    padding-left: 47px;
-    padding-right: 47px;
+    padding-left: 37px;
+    padding-right: 37px;
   }
 }
 

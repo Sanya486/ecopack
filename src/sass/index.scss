@@ -1,6 +1,7 @@
 // utils
 @import './utils/variables.scss';
 @import './utils/mixins.scss';
+@import './utils/hidden.scss';
 
 // Base
 @import './base/common.scss';
@@ -44,3 +45,7 @@
 
 // Recycled bags page
 @import './layout/products/recycled-bags.scss';
+
+// Modal menu
+
+@import './layout/modals/menu.scss';
