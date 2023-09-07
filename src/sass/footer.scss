@@ -32,6 +32,11 @@
     display: flex;
     gap: 79px;
     margin-bottom: 30px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
   }
   .nav-item-text {
     color: $lightColor;
