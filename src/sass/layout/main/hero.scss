@@ -49,7 +49,8 @@
   (min-resolution: 2dppx) {
   .main-hero {
     .bcg {
-      background-image: url(../img/hero-bcg/mobile/image-hero@2x.png);
+      background-image: url(../img/hero-bcg/shadow.png),
+        url(../img/hero-bcg/mobile/image-hero@2x.png);
     }
   }
 }
@@ -59,10 +60,11 @@
 @media screen and (min-width: 768px) {
   .main-hero {
     .bcg {
-      background-image: url(../img/hero-bcg/tablet/image-hero.png);
-      background-repeat: no-repeat;
-      background-position: center top;
-      background-size: 768px 944px;
+      background-image: url(../img/hero-bcg/shadow.png),
+        url(../img/hero-bcg/tablet/image-hero.png);
+      background-repeat: no-repeat, no-repeat;
+      background-position: bottom -87px right, center top;
+      background-size: 1810px 300px, 768px 944px;
     }
 
     .hero-content-wrapper {
@@ -86,7 +88,8 @@
     (min-resolution: 2dppx) {
     .main-hero {
       .bcg {
-        background-image: url(../img/hero-bcg/tablet/image-hero@2x.png);
+        background-image: url(../img/hero-bcg/shadow.png),
+          url(../img/hero-bcg/tablet/image-hero@2x.png);
       }
     }
   }
@@ -97,10 +100,11 @@
 @media screen and (min-width: 1440px) {
   .main-hero {
     .bcg {
-      background-image: url(../img/hero-bcg/desktop/image-hero.png);
-      background-repeat: no-repeat;
-      background-position: right top;
-      background-size: 923px 662px;
+      background-image: url(../img/hero-bcg/shadow.png),
+        url(../img/hero-bcg/desktop/image-hero.png);
+      background-repeat: no-repeat, no-repeat;
+      background-position: bottom -93px right 50px, right top;
+      background-size: 1810px 300px, 923px 662px;
     }
 
     .hero-content-wrapper {
@@ -121,7 +125,8 @@
     (min-resolution: 2dppx) {
     .main-hero {
       .bcg {
-        background-image: url(../img/hero-bcg/desktop/image-hero@2x.png);
+        background-image: url(../img/hero-bcg/shadow.png),
+          url(../img/hero-bcg/desktop/image-hero@2x.png);
       }
     }
   }
