@@ -11,7 +11,13 @@
   }
 
   .img-wrapper {
+    margin-left: auto;
+    margin-right: auto;
     max-width: 358px;
+    overflow: hidden;
+    img {
+      transform: scale(1.2);
+    }
   }
 
   .title {
@@ -100,6 +106,7 @@
     .img-wrapper {
       img {
         width: 100%;
+        transform: scale(1.1);
       }
     }
     .tel:hover {

@@ -73,15 +73,6 @@
       transition: color 300ms $animation, background-color 300ms $animation,
         border-color 300ms $animation, opacity 300ms $animation,
         background-image 300ms $animation;
-
-      &:hover {
-        border: 4px solid $accentSecondaryColor;
-      }
-      &:active {
-        color: $darkColor;
-        background-color: $lightColor;
-        border: 4px solid $accentSecondaryColor;
-      }
     }
   }
 }

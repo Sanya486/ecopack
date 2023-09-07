@@ -38,6 +38,7 @@
   }
 
   .uniq-wrapper {
+    height: 308px;
     padding: 24px;
     margin-bottom: 20px;
     display: flex;
@@ -171,6 +172,7 @@
       }
 
       .uniq-wrapper {
+        position: relative;
         width: 546px;
         height: 354px;
         grid-column: 2;
@@ -178,6 +180,9 @@
 
         .img-wrapper {
           height: 100%;
+          position: absolute;
+          top: 0;
+          left: 95px;
         }
       }
     }
@@ -192,13 +197,13 @@
       grid-row-gap: 24px;
 
       .eco-wrapper {
-        width: 546px;
+        max-width: 546px;
         height: 354px;
-
+        margin-bottom: 0;
         grid-column: 1;
         grid-row: 1/4;
         .img-wrapper {
-          width: 419px;
+          max-width: 419px;
           height: 345px;
           right: 0;
           top: 0;

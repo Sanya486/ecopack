@@ -4,10 +4,16 @@
 
   .img-wrapper {
     max-width: 358px;
+    height: 349px;
     margin-bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    border-radius: 20px;
   }
 
   img {
+    object-fit: unset;
     margin-bottom: 24px;
   }
 
@@ -81,6 +87,9 @@
       max-width: 704px;
       height: 490px;
       margin-bottom: 0;
+      img {
+        transform: scale(0.95);
+      }
     }
   }
 }
@@ -96,12 +105,14 @@
       width: 774px;
       margin-left: auto;
       margin-right: auto;
-    }
-    .img-wrapper {
-      img {
-        width: 100%;
+      .img-wrapper {
+        img {
+          margin-bottom: 0;
+          width: 100%;
+        }
       }
     }
+
     .tel:hover {
       color: $accentColor;
     }

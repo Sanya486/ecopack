@@ -3,11 +3,24 @@
     <h1 class="title">Пакети вкладиші з поліетилену</h1>
     <div class="product-wrapper">
       <div class="img-wrapper">
-        <img
-          srcset="img/inside-bag.png 1x, img/inside-bag@2x.png 2x"
-          src="img/inside-bag.png"
-          alt="inside-bags"
-        />
+        <picture>
+          <source
+            srcset="
+              img/inside-bag-desktop.png    1x,
+              img/inside-bag-desktop@2x.png 2x
+            "
+            type="image/png"
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="img/inside-bag.png 1x, img/inside-bag@2x.png 2x"
+            type="image/png"
+            type="image/jpeg"
+            media="(max-width:767px)"
+          />
+
+          <img src="img/inside-bag.png" alt="inside-bags" />
+        </picture>
       </div>
       <div class="product-text-wrapper">
         <h3 class="subtitle">Пакети вкладиші</h3>

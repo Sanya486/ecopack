@@ -33,7 +33,6 @@
 }
 
 .secondary-header {
-  border-bottom: 2px solid $accentColor;
   .catalog-navigation {
     display: none;
   }
@@ -90,6 +89,7 @@
     }
   }
   .secondary-header {
+    border-bottom: 2px solid $accentColor;
     height: 58px;
     display: flex;
     align-items: center;
