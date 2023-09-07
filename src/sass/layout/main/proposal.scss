@@ -69,13 +69,12 @@
       font-style: normal;
       font-weight: 600;
       line-height: 120%;
-
-      transition: color 300ms linear, background-color 300ms linear,
-        border-color 300ms linear;
+      background-image: none;
+      transition: color 300ms $animation, background-color 300ms $animation,
+        border-color 300ms $animation, opacity 300ms $animation,
+        background-image 300ms $animation;
 
       &:hover {
-        color: $lightColor;
-        background-color: $accentColor;
         border: 4px solid $accentSecondaryColor;
       }
       &:active {
@@ -139,22 +138,25 @@
         width: 432px;
         height: 288px;
       }
+      .image-subtext {
+        padding-left: 0;
+        padding-right: 0;
+
+        background-image: url('../img/arrow-right.svg');
+        background-size: 0px 0px;
+        background-position: right 16px top 50%;
+        background-repeat: no-repeat;
+        &:hover {
+          transition: background-size 300ms $animation;
+          background-size: 32px 24px;
+        }
+      }
     }
 
     .text-wrapper {
       width: 658px;
     }
 
-    .image-subtext {
-      padding-left: 0;
-      padding-right: 0;
-      &:hover {
-        background-image: url('../img/arrow-right.svg');
-        background-size: 32px 24px;
-        background-position: right 16px top 50%;
-        background-repeat: no-repeat;
-      }
-    }
     .btn-link {
       margin-top: 72px;
     }
